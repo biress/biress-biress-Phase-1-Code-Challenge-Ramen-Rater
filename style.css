@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 3em;
+    margin-top: 50px;
+    color: #ff6f61;
+}
+
+/* Ramen Menu Styling */
+#ramen-menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row; /* Arrange images horizontally */
+    justify-content: flex-start; /* Align images to the left */
+    gap: 10px; /* Space between the images */
+    margin: 20px auto;
+    overflow-x: auto; /* Allow horizontal scrolling if images overflow */
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ramen-menu img {
+    width: 150px; /* Smaller width for images */
+    height: 100px; /* Smaller height for images */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+}
+
+/* Ramen Detail Styling */
+#ramen-detail {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none; /* Hidden by default */
+}
+
+#ramen-detail img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#ramen-detail h2 {
+    font-size: 2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+#ramen-detail p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Form Styling */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e65b50;
+}

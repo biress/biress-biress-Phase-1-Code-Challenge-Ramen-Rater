@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Ramen Rating </title>
+    <title>Ramen Rating App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ramen Dish</h1>
-    <div id="ramen-menu"></div>
+    <div id="ramen-menu">  </div>
     <div id="ramen-detail">
-        <img id="ramen-detail-image" src="./images/shoyu.jpg" alt="Ramen Image">
-        <h2 id="ramen-name"></h2>
-        <p id="ramen-restaurant"></p>
-        <p id="ramen-rating"></p>
-        <p id="ramen-comment"></p>
+        <img id="detail-image" src="" alt="Ramen Image" data-restaurant="" >
+        <div class = "ramen-text">
+            <h2 id="detail-name"></h2>
+            <h3 id="detail-restaurant"></h3>
+            <p id="detail-rating"></p>
+            <p id="detail-comment"></p>
+        </div>
     </div>
-    
+    <h1>Add new Ramen</h1>
     <form id="new-ramen-form">
-        <input type="text" id="new-ramen-name" placeholder="Name" required>
-        <input type="text" id="new-ramen-restaurant" placeholder="Restaurant" required>
-        <input type="url" id="new-ramen-image" placeholder="Image URL" required>
-        <input type="number" id="new-ramen-rating" placeholder="Rating" min="1" max="10">
-        <textarea id="new-ramen-comment" placeholder="Comment"></textarea>
+        <input type="text" id="new-name" placeholder="Name" required>
+        <input type="text" id="new-restaurant" placeholder="Restaurant" required>
+        <input type="url" id="new-image" placeholder="Image URL" required>
+        <input type="text" id="new-rating" placeholder="Rating" required>
+        <textarea id="new-comment" placeholder="Comment"></textarea>
         <button type="submit">Add Ramen</button>
     </form>
-
     <script src="index.js"></script>
 </body>
 </html>
